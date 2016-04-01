@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TrelloClone</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper fixed">
+        <a href="/" class="brand-logo blue-grey-text center">Trello Clone</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="blue-grey"><a href="/">Boards</a></li>
+        </ul>
+      </div>
+    </nav>
+ </div>
+
+<%= yield %>
+
+</body>
+</html>
